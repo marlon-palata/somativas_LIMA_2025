@@ -1,0 +1,103 @@
+/* Estilos Globais */
+body {
+    background-color: #fdfaf6; /* Um tom de branco mais quente */
+    color: #4a4a4a;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Rodapé */
+header, footer {
+    background-color: #5D4037; /* Marrom escuro */
+    color: #fdfaf6;
+    padding: 15px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #3E2723; /* Marrom mais escuro ainda */
+}
+
+/* Navegação Principal */
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: #fdfaf6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo Principal e Seções */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #D7CCC8; /* Borda marrom clara */
+}
+
+/* Barra Lateral */
+aside {
+    background-color: #EFEBE9; /* Cinza amarronzado */
+    padding: 15px;
+    border-left: 4px solid #A1887F; /* Destaque marrom médio */
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #D7CCC8;
+}
+
+th {
+    background-color: #A1887F; /* Marrom médio */
+    color: white;
+}
+
+/* Formulário da tela de login */
+form {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    margin: 30px auto;
+    border: 1px solid #D7CCC8;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #5D4037;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 98%;
+    font-size: 16px;
+}
+
+/* Link secundário na tela de login */
+p {
+    text-align: center;
+}
