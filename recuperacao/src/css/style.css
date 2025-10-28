@@ -1,0 +1,93 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Básico do Corpo */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9; /* Fundo levemente cinza */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333; /* Fundo escuro */
+    color: white;
+    padding: 1rem; /* Usando rem para espaçamento */
+    text-align: center;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0.5rem 0;
+}
+
+nav li {
+    display: inline; /* Coloca links lado a lado */
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 1rem;
+}
+
+/* Seções */
+section {
+    background-color: white; /* Fundo branco para seções */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee; /* Borda sutil */
+}
+
+/* Artigo (para diferenciar) */
+article {
+    background-color: #f0f0f0; /* Fundo levemente diferente */
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-left: 3px solid #666; /* Destaque lateral */
+}
+
+/* Barra Lateral */
+aside {
+    background-color: #e9e9e9; /* Fundo cinza claro */
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Estilo Básico para Títulos (Exemplo) */
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo Básico para Imagens (Exemplo) */
+img {
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto;
+    display: block; /* Facilita centralização com margem */
+    margin: 0.5rem auto; /* Centraliza a imagem */
+}
+
+/* Estilo Básico para Listas (Exemplo) */
+ul, ol {
+    margin-left: 1.5rem; /* Recuo padrão */
+}
