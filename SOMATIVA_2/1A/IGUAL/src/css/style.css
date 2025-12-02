@@ -1,0 +1,173 @@
+/* --- RESET E CONFIGURAÇÕES GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* Requisito Obrigatório */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121214; 
+    /* Fundo escuro (Tema Tech) */
+    color: #e1e1e6; 
+    /* Texto claro */
+}
+
+/* --- TOPO (FLEXBOX) --- */
+header {
+    background-color: #202024;
+    padding: 20px 40px;
+    border-bottom: 2px solid #04d361; 
+    /* Detalhe Verde Neon */
+    
+    /* Configuração Flexbox */
+    display: flex;
+    justify-content: space-between; /* Separa Logo e Menu */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+header h1 {
+    color: #fff;
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none; 
+    /* Remove bolinhas da lista */
+    display: flex; 
+    /* Coloca os links lado a lado */
+    gap: 20px; 
+    /* Espaço entre os links */
+}
+
+nav a {
+    color: #e1e1e6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #04d361; 
+    /* Muda cor ao passar o mouse */
+}
+
+/* --- SEÇÃO DESTAQUE (Banner) --- */
+#destaque {
+    background-color: #202024; 
+    /* Poderia ser uma imagem de fundo aqui */
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+#destaque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #04d361;
+}
+
+#destaque button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #04d361;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#destaque button:hover {
+    background-color: #03a84e;
+}
+
+/* --- VITRINE DE PRODUTOS (CSS GRID) --- */
+#produtos {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza a seção na tela */
+    padding: 20px;
+}
+
+#produtos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-left: 5px solid #04d361; /* Detalhe visual */
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.grade-produtos {
+    /* Ativação do Grid */
+    display: grid;
+    
+    /* Colunas Responsivas Automáticas (Requisito: repeat + minmax) */
+    /* Cria quantas colunas couberem, desde que tenham no mínimo 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    
+    /* Espaçamento entre os cards */
+    gap: 20px;
+}
+
+/* --- CARDS (ARTICLE) --- */
+.card {
+    background-color: #202024;
+    border: 1px solid #323238;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
+    transition: transform 0.3s; /* Animação suave */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Aumenta levemente ao passar o mouse */
+    border-color: #04d361;
+}
+
+/* Imagem do Produto (Requisito: width 100%) */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Cobre a área sem distorcer a imagem */
+}
+
+.card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #8d8d99;
+    margin-bottom: 15px;
+}
+
+.preco {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #04d361; /* Verde Neon */
+}
+
+/* --- RODAPÉ (FLEXBOX) --- */
+footer {
+    background-color: #202024;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #323238;
+    
+    /* Configuração Flexbox */
+    display: flex;
+    justify-content: center; /* Alinha no centro horizontalmente */
+    align-items: center; /* Alinha no centro verticalmente */
+}
+
+footer p {
+    color: #8d8d99;
+}
