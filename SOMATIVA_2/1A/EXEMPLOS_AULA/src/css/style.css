@@ -1,0 +1,104 @@
+/* --- RESET UNIVERSAL --- */
+/* CÓPIA EXATA: AULA 15 - Slide 17 e AULA 16 - Slide 5 */
+* {
+  box-sizing: border-box; /* A MÁGICA! */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif; /* AULA 14 - Slide 6 */
+  background-color: #121214; /* Tema Tech (Escuro) */
+  color: white;
+}
+
+/* --- CABEÇALHO (FLEXBOX) --- */
+/* LÓGICA: AULA 16.1 - Slide 7 (Justify) e 8 (Align) */
+header {
+  display: flex;
+  justify-content: space-between; /* Espalha Logo e Menu */
+  align-items: center; /* Centraliza verticalmente */
+
+  background-color: #202024;
+  padding: 20px;
+  border-bottom: 2px solid #04d361; /* Detalhe Tech */
+}
+
+/* --- MENU DE NAVEGAÇÃO --- */
+/* CÓPIA EXATA: AULA 15 - Slide 11 (Resetando lista) */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* CÓPIA EXATA: AULA 15 - Slide 12 (Menu Horizontal) */
+nav li {
+  display: inline-block; /* Ou display: flex no ul */
+  margin-left: 20px;
+}
+
+/* CÓPIA EXATA: AULA 15 - Slide 13 (Botões do menu) */
+nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem; /* Botão clicável */
+}
+
+nav li a:hover {
+  color: #04d361;
+}
+
+/* --- DESTAQUE (HERO) --- */
+#destaque {
+  text-align: center;
+  padding: 50px;
+  background-color: #202024;
+  margin-bottom: 30px;
+}
+
+/* --- GRID DE PRODUTOS --- */
+/* CÓPIA EXATA: AULA 16.1 - Slide 20 (Minmax) e Slide 32 (Atividade) */
+.grid-container {
+  display: grid;
+  /* "A Mágica" citada no Slide 19: repeat + minmax */
+  grid-template-columns: repeat(minmax(200px, 1fr));
+
+  gap: 20px; /* AULA 16.1 - Slide 17 */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* AULA 15 - Slide 7 (Centralizar container) */
+}
+
+/* --- CARDS (ARTICLE) --- */
+/* LÓGICA: AULA 15 - Slide 5 (Box Model simples) */
+.card {
+  background-color: #202024;
+  border: 1px solid #333;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px; /* AULA 14 - Slide 19 */
+}
+
+/* CÓPIA EXATA: AULA 14 - Slide 19 (Imagem responsiva) */
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* --- RODAPÉ --- */
+/* CÓPIA EXATA: AULA 16.1 - Slide 9 (Centralização Total Flexbox) */
+footer {
+  display: flex;
+  justify-content: center; /* Centro Horizontal */
+  align-items: center; /* Centro Vertical */
+  height: 100px;
+  background-color: #04d361;
+  color: #121214;
+  font-weight: bold;
+  margin-top: 40px;
+}
