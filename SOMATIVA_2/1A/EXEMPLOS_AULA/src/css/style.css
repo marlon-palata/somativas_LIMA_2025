@@ -63,7 +63,7 @@ nav li a:hover {
 .grid-container {
   display: grid;
   /* "A Mágica" citada no Slide 19: repeat + minmax */
-  grid-template-columns: repeat(minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
 
   gap: 20px; /* AULA 16.1 - Slide 17 */
   padding: 20px;
